@@ -15,7 +15,7 @@ help:
 .PHONY: clean help Makefile
 
 clean: Makefile
-	rm -rf api/*/
+	rm -rf api
 	@$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 # Catch-all target: route all unknown targets to Sphinx using the new
