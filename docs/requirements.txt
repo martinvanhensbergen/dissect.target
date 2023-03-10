@@ -1,0 +1,13 @@
+sphinx
+sphinx-autoapi
+sphinx_argparse_cli
+sphinx-copybutton
+sphinx-design
+furo
+
+# These dependencies are needed to generate docs for dissect.target and
+# flow.record.
+defusedxml
+fusepy
+msgpack
+structlog
