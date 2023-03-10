@@ -44,7 +44,7 @@ FIELD_NAME_INVALID_CHARS_RE = re.compile(r"[^a-zA-Z0-9]")
 class IISLogsPlugin(plugin.Plugin):
     """IIS 7 (and above) logs plugin.
 
-    References:
+    Sources:
         - `<https://docs.microsoft.com/en-us/iis/get-started/planning-your-iis-architecture/introduction-to-applicationhostconfig>`_
         - `<https://docs.microsoft.com/en-us/previous-versions/iis/6.0-sdk/ms525807(v=vs.90)>`_
     """  # noqa: E501
@@ -91,10 +91,10 @@ class IISLogsPlugin(plugin.Plugin):
 
         This format is not the default IIS log format.
 
-        References:
+        Sources:
             - `<https://docs.microsoft.com/en-us/previous-versions/iis/6.0-sdk/ms525807(v=vs.90)#iis-log-file-format>`_
             - `<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc728311(v=ws.10)>`_
-            - `<https://learn.microsoft.com/en-us/iis/configuration/system.applicationHost/sites/site/logFile/`_
+            - `<https://learn.microsoft.com/en-us/iis/configuration/system.applicationHost/sites/site/logFile/>`_
         """  # noqa: E501
 
         tzinfo = self.target.datetime.tzinfo
@@ -149,7 +149,7 @@ class IISLogsPlugin(plugin.Plugin):
 
         This is the default logging format for IIS [^3].
 
-        References:
+        Sources:
             - `<https://docs.microsoft.com/en-us/previous-versions/iis/6.0-sdk/ms525807(v=vs.90)#w3c-extended-log-file-format>`_
             - `<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc786596(v=ws.10)>`_
             - `<https://learn.microsoft.com/en-us/iis/configuration/system.applicationHost/sites/site/logFile/>`_
